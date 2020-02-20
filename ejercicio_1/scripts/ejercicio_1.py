@@ -12,7 +12,7 @@ def ejercicio1():
         numero=int(input("dame un numero: "))
         rospy.loginfo(numero)
         pub.publish(numero)
-        rate.sleep()
+       
 
 if __name__ == '__main__':
     try:
