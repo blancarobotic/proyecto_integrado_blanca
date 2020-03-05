@@ -1,22 +1,12 @@
 // Motor A
-int ENA = 2 ;
-int IN1 = 3;
-int IN2 = 4;
+int ENA = 10;
+int IN1 = 9;
+int IN2 = 8;
 
 // Motor B
-int ENB = 7;
-int IN3 = 5;
+int ENB = 5;
+int IN3 = 7;
 int IN4 = 6;
-
-//motor C
-int ENC = 8 ;
-int IN5 = 9;
-int IN6 = 10;
-
-//motor D
-int END = 13;
-int IN7 = 11;
-int IN8 = 12;
 
 
 void setup ()
@@ -34,29 +24,29 @@ void Adelante ()
  //Direccion motor A
  digitalWrite (IN1, HIGH);
  digitalWrite (IN2, LOW);
- analogWrite (ENA, 0); //Velocidad motor A
+ analogWrite (ENA, 100); //Velocidad motor A
  //Direccion motor B
  digitalWrite (IN3, HIGH);
  digitalWrite (IN4, LOW);
- analogWrite (ENB, 255); //Velocidad motor B
+ analogWrite (ENB, 100); //Velocidad motor B
 }
 void Atras ()
 {
  //Direccion motor A
  digitalWrite (IN1, LOW);
  digitalWrite (IN2, HIGH);
- analogWrite (ENA, 128); //Velocidad motor A
+ analogWrite (ENA, 100); //Velocidad motor A
  //Direccion motor B
  digitalWrite (IN3, LOW);
  digitalWrite (IN4, HIGH);
- analogWrite (ENB, 0); //Velocidad motor B
+ analogWrite (ENB, 100); //Velocidad motor B
 }
 void Derecha ()
 {
  //Direccion motor A
  digitalWrite (IN1, HIGH);
  digitalWrite (IN2, LOW);
- analogWrite (ENA, 200); //Velocidad motor A
+ analogWrite (ENA, 100); //Velocidad motor A
  //Direccion motor B
  digitalWrite (IN3, LOW);
  digitalWrite (IN4, HIGH);
@@ -68,22 +58,22 @@ void Izquierda ()
  //Direccion motor A
  digitalWrite (IN1, LOW);
  digitalWrite (IN2, HIGH);
- analogWrite (ENA, 50); //Velocidad motor A
+ analogWrite (ENA, 100); //Velocidad motor A
  //Direccion motor B
  digitalWrite (IN3, HIGH);
  digitalWrite (IN4, LOW);
- analogWrite (ENB, 150); //Velocidad motor A
+ analogWrite (ENB, 100); //Velocidad motor A
 }
 void Parar ()
 {
  //Direccion motor A
  digitalWrite (IN1, LOW);
  digitalWrite (IN2, LOW);
- analogWrite (ENA, 0); //Velocidad motor A
+ analogWrite (ENA, 100); //Velocidad motor A
  //Direccion motor B
  digitalWrite (IN3, LOW);
  digitalWrite (IN4, LOW);
- analogWrite (ENB, 0); //Velocidad motor A
+ analogWrite (ENB, 100); //Velocidad motor A
 }
 void loop ()
 {
